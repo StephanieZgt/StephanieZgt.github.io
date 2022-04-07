@@ -1,0 +1,21 @@
+body {
+    /* background-color: #42AAF7; */
+    background-image: url("./assets/background.png");
+    background-repeat: repeat;
+}
+#page {
+    margin-top: 5%;
+    
+}
+#header {
+    background-color: #F6C61F;
+    padding: 15%;
+}
+#content {
+    background-color: white;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
