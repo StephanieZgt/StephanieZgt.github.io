@@ -1,70 +1,66 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 <body>
-    <div class="container">
+<header>
+    <a href="#" class="logo"><span>T</span>rico_o<span>T</span></a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#aproposdemoi" onclick="toggleMenu();">A propos de moi</a></li>
+        <li><a href="#mesprojets" onclick="toggleMenu();">Mes projets</a></li>
+        <li><a href="#mesprojetsfuturs" onclick="toggleMenu();">Projets Futurs</a></li>
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+</section>
+<section class="aproposdemoi" id="aproposdemoi">
+    <div class="row">
+        <div class="col50">
+            <div class="img">
+                <img src="./image/2.png" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu" id="menu">
+<section class="mesprojets" id="mesprojets"> 
+    <div class="row">
+        <div class="col50">
+            <div class="img">
+                <img src="./image/3.png" alt="image">
+            </div>
+        </div>
+    </div>
+ </section>
+ <section class="mesprojetsfuturs" id="mesprojetsfuturs"> 
+    <div class="row">
+        <div class="col50">
+            <div class="img">
+                <img src="./image/4.png" alt="image">
+            </div>
+        </div>
+    </div>
+ </section>
 
-          <div id="page" >
-              <div id="header"class="row">
+ 
+ 
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
 
-                  <div  class="col">
-                      <h1>Hello!</h1>
-                      <h2>I'm excited to learn !</h2>
-                      <div>Let's create amazing projects together.</div>
-                      
-                    </div>
-                    <div class="col">
-                        
-                       <img src="assets/avatar.png " id="avatar" class="img-fluid mx-auto">
-                    </div>
-                </div>
-                <div id="content" class="row">
-                    <h2>Portfolio</h2>
-
-
-                    <figure>
-                        <figcaption>Listen to my OST soundtrack</figcaption>
-                        <audio
-                            controls
-                            src="assets/music1.mp3">
-                                Your browser does not support the
-                                <code>audio</code> element.
-                        </audio>
-                         <audio
-                            controls
-                            src="assets/music2.mp3">
-                                Your browser does not support the
-                                <code>audio</code> element.
-                        </audio>
-                        <audio
-                            controls
-                            src="assets/music3.3.mp3">
-                                Your browser does not support the
-                                <code>audio</code> element.
-                        </audio>
-                        <p>MMI projects :</p>
-
-<ul>
-  <li><a href="https://drive.google.com/file/d/1hzrGqFrVY9GlgeV9iLuKNyOR-8P2n3Xq/view?usp=sharing">Moodboard</a></li>
-  <li><a href="https://drive.google.com/file/d/1ul5fw131J0f_WFygtdcNhr7wi70srIHJ/view?usp=sharing">Prototypage</a></li>
-</ul>
-                    </figure>
-                    
-                </div>
-
-          </div>
-
-
-      </div>
+     
+ </script>
 </body>
-
-
-
 </html>
+
