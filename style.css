@@ -48,11 +48,11 @@ header{
 .banniere{
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    size: 100%;
+    min-height: 100vh;;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./image/1.png);
     background-size: cover;
 }
 
